@@ -1,29 +1,229 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Styling Starts Here */
 section > h1:first-child
 {
   display: none;
 }
 
-.featured-content
-{
-  background-image: url('images/your_verse_hero.jpg');
-  background-repeat: no-repeat;
-}
-
 nav
 {
-  line-height: 1.5em;
+  position: relative;
+  top: 20px;
+  left: 180px;
+  border: 1px solid #746663;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+section
+{
+  height: 538px;
+  background-image: url('images/your_verse_hero.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+form{
+  display: inline-block;
+  width: 132px;
+  height: 36px;
+  background-color: orange;
+  position: relative;
+  padding: 5px 11px;
+  box-sizing: border-box;
+}
+nav a
+{
+  display: inline-block;
+  width: 102px;
+  height: 36px;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  background-color: orange;
+  line-height: 36px;
+  margin: 0;
+  font-size: 14px;
+  /* Color for linear gradient  #808080 and */
 }
 nav .apple-home
 {
   display: inline-block;
   width: 100px;
-  height: 1.5em;
+  height: 36px;
+  text-align: center;
    background-repeat: no-repeat;
   background-image: url('images/logo1.png');
+  background-position: center;
+}
+
+nav .apple-home:hover{
+  background-image: url('images/logo2.png');
 }
 
 nav input
 {
   background-repeat: no-repeat;;
+  background-color: #818181;
+  width: 106px;
+  height: 26px;
+  font-size: 12px;
   background-image: url('images/search_img1.png');
+  border-radius: 15px;
+  background-position: 3px 3px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+
+nav input:focus
+{
+    background-image: url('images/search_img2.png');
+    background-color: #fff;
+    outline: none;
+}
+nav a:hover
+{
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+  color:#08c;
+}
+
+a:hover
+{
+  text-decoration: underline;
+}
+
+nav a
+{
+  color: #fff;
+}
+
+h1, h2, h3, h4
+{
+  box-sizing: border-box;
+}
+
+.featured-content h1
+{
+  margin-top: 100px;
+  text-align: center;
+  height: 90px;
+  overflow: hidden;
+}
+
+.featured-content h2
+{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.featured-content h3
+{
+  background-image: url('images/cta_your_verse_27pt.png');
+  height: 30px;
+  margin-top: 30px;
+  background-position: top;
+}
+
+.featured-content a
+{
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.featured-content h3:hover
+{
+  background-position: bottom;
+}
+
+.promo-content
+{
+  position: relative;
+  top: 148px;
+}
+
+.promo-content img
+{
+  margin-right: 1px;
+}
+
+footer{
+  padding: 20px 180px 10px;
+  position: relative;
+  top: 200px;
+  color: #6e6e63;
+  font-size: 12px;
+}
+
+footer p
+{
+  margin-bottom: 10px;
+}
+.site-navigation
+{
+  float: right;
+}
+
+.site-navigation img
+{
+  vertical-align: text-top;
+}
+
+.site-navigation a
+{
+  padding-right: 5px;
+  border-right: 1px solid #08c;
 }
