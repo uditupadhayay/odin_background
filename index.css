@@ -1,0 +1,29 @@
+section > h1:first-child
+{
+  display: none;
+}
+
+.featured-content
+{
+  background-image: url('images/your_verse_hero.jpg');
+  background-repeat: no-repeat;
+}
+
+nav
+{
+  line-height: 1.5em;
+}
+nav .apple-home
+{
+  display: inline-block;
+  width: 100px;
+  height: 1.5em;
+   background-repeat: no-repeat;
+  background-image: url('images/logo1.png');
+}
+
+nav input
+{
+  background-repeat: no-repeat;;
+  background-image: url('images/search_img1.png');
+}
