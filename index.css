@@ -63,6 +63,10 @@ nav
   display: inline-block;
 }
 
+nav:hover{
+
+}
+
 section
 {
   height: 538px;
@@ -75,7 +79,6 @@ form{
   display: inline-block;
   width: 132px;
   height: 36px;
-  background-color: orange;
   position: relative;
   padding: 5px 11px;
   box-sizing: border-box;
@@ -88,11 +91,9 @@ nav a
   padding: 0;
   text-align: center;
   vertical-align: middle;
-  background-color: orange;
   line-height: 36px;
   margin: 0;
   font-size: 14px;
-  /* Color for linear gradient  #808080 and */
 }
 nav .apple-home
 {
@@ -107,6 +108,8 @@ nav .apple-home
 
 nav .apple-home:hover{
   background-image: url('images/logo2.png');
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 nav input
@@ -123,16 +126,22 @@ nav input
   box-sizing: border-box;
 }
 
+nav{
+	background: linear-gradient(to top, #777777, #5E5E5E 50%, #707070 50%, #888888)
+}
 
 nav input:focus
 {
     background-image: url('images/search_img2.png');
+		background-repeat:
+		no-repeat;
     background-color: #fff;
     outline: none;
 }
 nav a:hover
 {
   text-decoration: none;
+  background: linear-gradient(to bottom, #636363, #4A4A4A 50%, #3B3B3B 50%, #454545 100%)
 }
 
 a{
